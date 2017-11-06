@@ -155,6 +155,38 @@ If We now run `git status` again we see that the file is now marked with green a
 
 To commit it just type `git commit -m "setup travis.yml"` and if everything is fine push it by running `git push` in the console.
 
-Now after every new push we should trigger our job at travis.
+Yay!! We successfully configured travis. Let's see how our job runs. To do so head over to your browser an open `https://travis-ci.org/` under your repositories your should see the running job of our repository.
 
+PIC HERE!!!
+
+When its done it should dturn green like below.
+
+PIC HERE!!!
+
+Now after every new push we should trigger our job at travis again.
 To test it just make some changes and `git push` them.
+
+Now we can also test if the `travis-cli` works. Let's check the status of our repository on travis by running `travis status`.
+We should see `build #1 passed` in our console.
+ 
+So far so good.
+
+Sets sum up what we did:
+- setup an angular project
+- connected it with a github repository
+- initialized travis and configured it in the `.travis.yml` file
+- we start a job on every push
+- and are able to check the travis status over a cli command
+
+## Step 2 - Create script and implement check
+
+Now everything works we can setup a script that checks the build status of our repo.
+In case of invalid status it should exits.
+
+1. Create config file
+2. Create travis-check.js file.
+3. Implement check
+4. Use check
+i.e. publish on npm only if travis status in `passing`
+
+Finished!
