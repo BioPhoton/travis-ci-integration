@@ -305,4 +305,4 @@ Done! :-)
 We finished a minimal setup with travis, checked the build state and can now release our project based on the build state.
 
 You can find the final code on github.com under [angular5-travis-ci-integreation](https://github.com/BioPhotone/travis-ci-integreation).
-I also did some small refactorings and changed the folder structure a bit, so the final code is a tiny bit more organized then here in the post.
+I also did some small refactorings and changed the folder structure, so the final code is a tiny bit more organized then here in the post.
